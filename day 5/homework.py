@@ -1,5 +1,5 @@
 birth_year = int(input("7 December: "))
-current_year = 2024  
+current_year = 2024
 age = current_year - birth_year
 print("15:", age)
 
@@ -10,7 +10,6 @@ area = width * height
 perimeter = 2 * (width + height)
 print("4:", area)
 print("4:", perimeter)
-
 
 
 distance_km = float(input("5: "))
@@ -33,12 +32,9 @@ hobby2 = input("proggraming: ")
 hobby3 = input("proggraming: ")
 
 
-
 print(first_name + " " + last_name + " არის " + parent_first_name + " " + parent_last_name + "-ის შვილი. " +
       "მისი საყვარელი ფერი არის " + favorite_color + ", საყვარელი მანქანა - " + favorite_car + ", " +
       "და მისი საყვარელი ჰობებია: " + hobby1 + ", " + hobby2 + ", " + hobby3 + ".")
-
-
 
 
 number = int(input("15: "))
