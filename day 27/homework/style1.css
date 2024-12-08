@@ -1,0 +1,19 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;  
+    color: #2e2e2e;  
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    color: #ff4500;  
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.2em;
+    color: rgb(34, 34, 34);
+    line-height: 1.6;
+}

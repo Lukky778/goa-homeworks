@@ -1,0 +1,15 @@
+.btn {
+    width: 150px;
+    height: 40px;
+    color: burlywood;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    border: 1px solid burlywood;
+    cursor: pointer;
+}
+
+main p, footer p {
+    color: burlywood;
+    font-size: 18px;
+    text-align: center;
+}
