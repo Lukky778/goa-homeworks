@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fad0c4);
+    font-family: 'Arimo', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: linear-gradient(45deg, #84fab0, #8fd3f4, #fccb90);
+    border-radius: 10px;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 4px 8px;
+    transition: transform 0.3s ease;
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}

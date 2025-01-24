@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', serif;
+    background-image: url('./79fb576c5d621ee0064a15d45fea8ad4.png'); 
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    color: coral;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.profile-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.image-container {
+    background-image: url('./Snapchat-77610642.jpg ');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 3px solid coral;
+}

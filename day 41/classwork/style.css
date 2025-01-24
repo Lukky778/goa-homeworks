@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+#link:link {
+    color: aqua;
+    font-size: 1.5rem;
+}
+
+#visited:visited {
+    color: navajowhite;
+}
+
+#active:active {
+    color: rgb(45, 157, 0);
+}
+
+#hover:hover {
+    font-weight: 900;
+    color: salmon;
+}
+
+

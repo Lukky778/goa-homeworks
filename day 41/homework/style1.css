@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+th {
+    background-color: black;
+    color: white;
+    position: sticky; 
+    top: 0;
+    z-index: 2; 
+}
+
+tr:nth-child(even) {
+    background-color: aquamarine;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(49, 239, 176);
+}
+
+tr:not(:first-child):hover {
+    background-color: rgb(48, 117, 94);
+    color: white;
+}
