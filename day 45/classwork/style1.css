@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    border: 2px solid black;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 20px;
+}
+.div1, .div2 {
+    border: 2px solid black;
+    padding: 50px;
+    width: 150px;
+    height: 150px;
+}

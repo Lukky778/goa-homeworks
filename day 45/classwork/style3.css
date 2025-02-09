@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 20px;
+    border: 2px solid black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.div1, .div2, .div3, .div4 {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+.div1 {
+    border: 2px solid black;
+}
+
+.div2 {
+    border: 2px solid black;
+}
+
+.div3 {
+    border: 2px solid black;
+    margin-top: auto;
+}
+
+.div4 {
+    border: 2px solid black; 
+    margin-top: 100px; 
+    margin-left: auto;
+
+}

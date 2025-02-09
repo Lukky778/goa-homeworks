@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    border: 2px solid black;
+}
+.container {
+    display: flex;
+    align-items: center;
+}
+.div1, .div2 {
+    border: 2px solid blue;
+    padding: 20px;
+    margin-right: 10px;
+}
+.text-box {
+    color: yellow;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid red;
+}
