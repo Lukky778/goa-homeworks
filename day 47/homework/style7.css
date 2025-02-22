@@ -1,0 +1,53 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pixelify Sans';
+    overflow-x: hidden;
+}
+
+.task {
+    height: fit-content;
+
+    padding: 20px 0px;
+
+    display: flex;
+
+    gap: 20px;
+}
+
+.box {
+    width: 180px;
+    height: 180px;
+
+    background-color: #29aae1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 100px;
+    color: #005087;
+}
+
+.task-7 {
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    background-color: rgb(27, 126, 35);
+}
+
+.task-7.task {
+    height: 650px;
+}
+
+.task-7 .box {
+    height: unset;
+    display: block;
+
+    text-align: center;
+}
