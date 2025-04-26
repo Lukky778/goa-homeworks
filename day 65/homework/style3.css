@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  main {
+    padding: 20px;
+    min-height: 80vh;
+    background: #f0f0f0;
+  }
+  
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      padding: 10px;
+      font-size: 18px;
+    }
+  
+    footer {
+      font-size: 20px;
+    }
+  }
+  

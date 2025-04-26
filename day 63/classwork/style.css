@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    
+    opacity: 0; /* დასაწყისში დამალულია */
+    transform: translateY(20px); /* ოდნავ ქვემოთ */
+    animation: fadeInUp 2s ease forwards; /* ანიმაცია */
+  }
+  
+  .card h1 {
+    color: #ff6b81;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .card p {
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  
+  .card button {
+    background: #ff6b81;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .card button:hover {
+    background: #ff4b61;
+  }
+  
+  /* ანიმაციის აღწერა */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

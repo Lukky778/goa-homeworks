@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #f0f0f0;
+    position: relative;
+  }
+  
+  .card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .card {
+      position: relative;
+      transform: none;
+      left: auto;
+      top: auto;
+      width: 90%;
+      margin: 20px auto;
+    }
+  }
+  
