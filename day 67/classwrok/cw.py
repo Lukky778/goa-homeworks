@@ -1,14 +1,54 @@
 #1
-average = lambda a, b, c: (a + b + c) / 3
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
 
 #2
-even_or_odd = lambda number: "Even" if number % 2 == 0 else "Odd"
+class Car:
+    def drive(self):
+        print("The car is driving")
+    
+    def stop(self):
+        print("The car has stopped")
+        
 
 #3
-positive_sum = lambda arr: sum(x for x in arr if x > 0)
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+        self.area = 3.14159 * radius * radius  
 
+circle = Circle(10)
+    
 #4
-find_smallest_int = lambda arr: min(arr)
+class Student:
+    def __init__(self, name, grade, subject):
+        self.name = name
+        self.grade = grade
+        self.subject = subject
 
+    def introduce(self):
+        return f"My name is {self.name}, I study {self.subject} and my grade is {self.grade}."
+    
 #5
-count_by = lambda x, n: [x * i for i in range(1, n + 1)]
+class BankAccount:
+    def __init__(self, balance=0):
+        self.balance = balance
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.balance += amount
+            return f"Deposited {amount}. Balance: {self.balance}"
+        else:
+            return "Deposit amount must be positive."
+
+    def withdraw(self, amount):
+        if amount > self.balance:
+            return "Insufficient funds."
+        elif amount <= 0:
+            return "Withdraw amount must be positive."
+        else:
+            self.balance -= amount
+            return f"Withdrew {amount}. Balance: {self.balance}"
