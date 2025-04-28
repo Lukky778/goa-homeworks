@@ -1,0 +1,92 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fd;
+    margin: 0;
+    padding: 2rem;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .create-post {
+    background: #fff1d6;
+  }
+  
+  .main {
+    background: #6b4eff;
+    color: white;
+  }
+  
+  .schedule {
+    background: #e2d9f3;
+  }
+  
+  .write-content {
+    background: #ffd37d;
+  }
+  
+  .manage-accounts {
+    background: #ffffff;
+  }
+  
+  .maintain-schedule {
+    background: #ffe499;
+  }
+  
+  .faster-growth {
+    background: #ffffff;
+  }
+  
+  .grow-followers {
+    background: #c8bbf8;
+  }
+  
+  h1, h2, h3 {
+    margin: 0 0 1rem 0;
+  }
+  
+  button {
+    background-color: #6b4eff;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  button:hover {
+    background-color: #5a3ee6;
+  }
+  
+  .highlight {
+    color: #6b4eff;
+  }
+  
+  .chat-bubble {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+  
