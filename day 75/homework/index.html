@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Animation, Form, JS & Tailwind</title>
+
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="transition-colors duration-300 bg-white text-gray-900">
+
+  <div class="container mx-auto p-6 space-y-8">
+
+    <div>
+      <h2 class="text-xl font-semibold mb-2">1️⃣ CSS Animation</h2>
+      <div class="animated-box mx-auto"></div>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-semibold mb-2">2️⃣ Contact Form</h2>
+      <form class="contact-form max-w-md mx-auto">
+        <label>
+          სახელი:<br>
+          <input type="text" name="name" placeholder="შენი სახელი" required>
+        </label><br><br>
+        <label>
+          E‑mail:<br>
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label><br><br>
+        <label>
+          შეტყობინება:<br>
+          <textarea name="message" rows="4" placeholder="შენი ტექსტი"></textarea>
+        </label><br><br>
+        <button type="submit">გაგზავნა</button>
+      </form>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-semibold mb-2">3️⃣ JS Double Function</h2>
+      <input id="doubleInput" type="number" placeholder="შეიყვანე რიცხვი" class="border p-2 rounded w-32">
+      <button onclick="runDouble()" class="ml-2 bg-green-500 text-white py-2 px-4 rounded">გაიმრავლე</button>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-semibold mb-2">4️⃣ Tailwind Box & Dark Mode</h2>
+      <button onclick="toggleDark()" class="mb-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded">
+        Toggle Dark Mode
+      </button>
+      <div class="p-6 border border-gray-300 rounded-lg shadow-md dark:bg-gray-800 dark:text-white max-w-xs mx-auto">
+        ეს არის Tailwind Box
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+
+    function double(n) {
+      return n * 2;
+    }
+    function runDouble() {
+      const val = parseFloat(document.getElementById('doubleInput').value);
+      if (isNaN(val)) {
+        console.log('გთხოვ, ჩაწერე რაოდენობა');
+      } else {
+        console.log('Result:', double(val));
+      }
+    }
+
+    function toggleDark() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>

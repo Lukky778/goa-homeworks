@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript ამოცანები</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <h1>JavaScript ამოცანები</h1>
+
+  <button onclick="task1()">1️⃣ ციფრების ჯამი</button>
+  <button onclick="task2()">2️⃣ ლუწი და კენტი რიცხვები</button>
+  <button onclick="task3()">3️⃣ გამრავლების ცხრილი</button>
+  <button onclick="task4()">4️⃣ ტემპერატურის კონვერტაცია</button>
+  <button onclick="task5()">5️⃣ სტრინგი დამუშავება</button>
+
+  <script>
+      function task1() {
+      let sum = 0;
+      for (let i = 1; i <= 100; i++) {
+        sum += i;
+      }
+      console.log("1-დან 100-მდე რიცხვების ჯამი არის:", sum);
+    }
+
+    function task2() {
+      for (let i = 1; i <= 50; i++) {
+        if (i % 2 === 0) {
+          console.log(i + " ლუწია");
+        } else {
+          console.log(i + " კენტია");
+        }
+      }
+    }
+
+    function task3() {
+      let number = parseInt(prompt("შეიყვანე რიცხვი გამრავლების ცხრილისთვის:"));
+      if (isNaN(number)) {
+        console.log("არასწორი რიცხვია");
+        return;
+      }
+      for (let i = 1; i <= 10; i++) {
+        console.log(`${number} x ${i} = ${number * i}`);
+      }
+    }
+
+    function task4() {
+      for (let celsius = 0; celsius <= 100; celsius++) {
+        let fahrenheit = (celsius * 9/5) + 32;
+        if (celsius < 10) {
+          console.log(`${celsius}°C = ${fahrenheit.toFixed(1)}°F — ცივია`);
+        } else if (celsius <= 30) {
+          console.log(`${celsius}°C = ${fahrenheit.toFixed(1)}°F — თბილია`);
+        } else {
+          console.log(`${celsius}°C = ${fahrenheit.toFixed(1)}°F — ცხელია`);
+        }
+      }
+    }
+
+    function task5() {
+      let text = "JavaScript is awesome!";
+      if (text.length === 0) {
+        console.log("მგონია, რომ ცარიელია");
+      } else if (text.includes("a")) {
+        console.log("მსგავსი სიმბოლოა ნაპოვნი");
+      } else {
+        console.log("სტანდარტული ტექსტი");
+      }
+    }
+  </script>
+
+</body>
+</html>

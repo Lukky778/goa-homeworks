@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello + Background Changer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Hello from HTML + JS</h1>
+  <button onclick="changeBackground()">Change Background</button>
+
+  <script>
+    console.log('Hello, World! 👋');
+
+    function changeBackground() {
+      const colors = ['#f39c12', '#3498db', '#2ecc71', '#9b59b6', '#e74c3c'];
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      document.body.style.backgroundColor = randomColor;
+    }
+  </script>
+
+</body>
+</html>

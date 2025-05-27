@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 40px;
+  transition: background-color 0.4s ease;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkslategray;
+}
+
+.task {
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+#box {
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
